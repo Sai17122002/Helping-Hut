@@ -1,8 +1,8 @@
 header {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -10,6 +10,12 @@ header {
   padding: 2.5rem 8%;
   background: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.line {
+  background: #262f36;
+  width: 100%;
+  height: 4px;
 }
 
 header .logo {
@@ -30,22 +36,28 @@ header .logo p {
 
 header .navbar {
   margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
 }
 
 header .navbar a {
-  font-size: 2rem;
+  font-size: 2.15rem;
   margin: 0 1.5rem;
-  color: var(--black);
+  /* color: var(--black); */
+  color: #262f36;
+  margin-top: 5px;
 }
 
 header .navbar a:hover {
   color: var(--orange);
+  margin-top: 5px;
 }
 
 header .buttons {
   display: flex;
   align-items: center;
   padding-top: 5px;
+  margin-left: 30px;
 }
 
 header .buttons button {
@@ -58,22 +70,6 @@ header .buttons button {
 header .buttons button:hover {
   color: #ff7800;
   cursor: pointer;
-}
-
-header .shopping-cart.active {
-  right: 2rem !important;
-  transition: 0.2s linear;
-}
-
-header .shopping-cart {
-  position: absolute;
-  top: 110%;
-  right: -110%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: var(--box-shadow);
-  width: 35rem;
-  background: #fff;
 }
 
 /* Button */
@@ -164,11 +160,6 @@ header .login.active {
   width: 17rem;
   background: #fff;
   margin-bottom: 1.5rem;
-}
-
-/* Home Section */
-section.home {
-  padding-top: 2rem;
 }
 
 .home-background img {
@@ -428,14 +419,71 @@ section.home {
   margin-left: 2.5px;
 }
 
+.header-top {
+  height: 30px;
+  width: 100%;
+  background-color: #4e4e4e;
+}
+
+.donation-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.donation-card div {
+  background: #ff7800;
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  color: #130f40;
+  text-align: center;
+}
+
+.donation-card div h2 {
+  font-size: 20px;
+}
+
+.donation-card div p {
+  font-size: 12px;
+}
+
+.donation-card div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(211, 130, 54, 0.288);
+}
+
+.donation-card div button {
+  /* background: white; */
+}
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
   }
 
+  .donation-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .donation-card div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
   header nav.navbar {
     display: flex;
     margin-top: 2rem;
+    flex-direction: column;
   }
 
   .navbar a {
@@ -447,10 +495,6 @@ section.home {
   .buttons {
     gap: 4rem;
     margin-top: 1rem;
-  }
-
-  section.home {
-    padding-top: 21rem;
   }
 
   section.aboutus,
@@ -478,6 +522,20 @@ section.home {
 
   section.home {
     padding-top: 16rem;
+  }
+
+  .donation-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .donation-card div {
+    width: 70%;
+    margin-bottom: 5rem;
+  }
+
+  .boxes {
+    padding: 0 7rem;
   }
 
   .buttons {

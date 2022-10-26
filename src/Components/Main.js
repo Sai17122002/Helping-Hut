@@ -1,12 +1,15 @@
 import Home from "./Home";
-import Aboutus from "./Aboutus";
 import OurWork from "./OurWork";
+import Donation from "./Donation";
+import Gallery from "./Gallery";
+
 const Main = () => {
   return (
     <>
       <Home />
-      <Aboutus />
       <OurWork />
+      <Donation />
+      <Gallery />
     </>
   );
 };
