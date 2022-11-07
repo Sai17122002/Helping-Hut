@@ -1,0 +1,27 @@
+.aboutus {
+  position: relative;
+}
+
+.aboutus-part {
+  position: absolute;
+  background: #96a7b4;
+  width: 150px;
+  top: 50px;
+  left: -10px;
+  text-align: center;
+  border-radius: 10px;
+  display: none;
+}
+
+.aboutus:hover .aboutus-part {
+  color: #f4f6f8;
+  display: block;
+}
+
+.overview {
+  display: block;
+}
+
+.ourmotive {
+  display: block;
+}

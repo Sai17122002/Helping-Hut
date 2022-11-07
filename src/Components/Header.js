@@ -1,5 +1,6 @@
 import HeaderImage from "../image/hhLogo.jpg";
 import { HashLink } from "react-router-hash-link";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -17,7 +18,20 @@ const Header = () => {
         </div>
         <nav class="navbar">
           <HashLink to="/#home">Home</HashLink>
-          <HashLink to="/#aboutus">About</HashLink>
+          <HashLink className="aboutus" to="/#aboutus">
+            About Us
+            <div className="aboutus-part">
+              <HashLink className="overview" to="/Overview">
+                Overview
+              </HashLink>
+              <HashLink className="ourmotive" to="/OurMotive">
+                Our Motive
+              </HashLink>
+              <HashLink className="teams" to="/Teams">
+                Our Teams
+              </HashLink>
+            </div>
+          </HashLink>
           <HashLink to="/#ourworks">Works</HashLink>
           <HashLink to="/contact">Contact</HashLink>
           <div class="buttons">

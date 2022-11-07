@@ -277,14 +277,7 @@ header .login.active {
 
 /* AboutUS Section */
 
-.aboutus {
-  padding: 1.5rem 15rem;
-  font-size: 2.4rem;
-  /* color: #848484;*/
-  color: #666;
-}
-
-.aboutus div p {
+/* .aboutus div p {
   padding-bottom: 1.5rem;
 }
 
@@ -311,7 +304,7 @@ header .login.active {
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
   margin: 0 auto;
   font-size: 2.5rem;
-}
+} */
 
 /* Footer Section */
 
@@ -461,8 +454,104 @@ header .login.active {
   background: rgba(211, 130, 54, 0.288);
 }
 
-.donation-card div button {
-  /* background: white; */
+/* Overview Part */
+.overview h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.overview-content {
+  margin: 30px 100px;
+  font-size: 20px;
+  background-color: #ececec;
+  color: #848484;
+}
+
+.overview-content p {
+  margin-bottom: 20px;
+}
+
+/* Motive Part */
+.motive {
+  padding: 50px 150px;
+  background: black;
+}
+
+.motive h1 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+.motive-content {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 50px;
+}
+
+.motive-content h2 {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.1;
+  padding-top: 50px;
+  border-top: 1px solid #fff;
+  margin-right: 250px;
+}
+
+.motive-content div {
+  border-top: 1px solid #fff;
+  margin-left: 100px;
+  padding: 50px;
+}
+
+.motive-content div p {
+  font-size: 20px;
+}
+
+.motive-content div p:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+/* Teams Part */
+.teams {
+  margin: 0 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.teams h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+.teams h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.teams-box {
+  font-size: 20px;
+  margin: 0 50px;
+  background: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.teams-image-content {
+  display: flex;
+  gap: 20px;
+}
+
+.teams-image-content img {
+  border: 10px solid black;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 600px) {
